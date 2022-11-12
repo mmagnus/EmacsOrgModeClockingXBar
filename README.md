@@ -10,6 +10,8 @@ The code is not perfect, if you quit your Emacs, without clocking-out the conten
 
 I have been using this for 2 years, and it's pretty robust. I didn't have time to share it before.
 
+https://www.reddit.com/r/orgmode/comments/ytdsho/orgmodeclockingxbar_see_a_task_when_you_clock_in/
+
 ## Emacs
 Setup the code for Emacs, add this line to your `~/.emacs.el`, in my case:
 
