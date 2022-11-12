@@ -8,3 +8,8 @@ Test the Python setup:
 	[0:12] (orgmode: time bar)
 
 Install into `OrgModeClockingXBar.1s.sh` `~/Library/Application Support/xbar/plugins`.
+
+Setup for code for Emacs:
+
+	(load-file "/Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.el")
+

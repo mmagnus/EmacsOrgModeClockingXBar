@@ -5,19 +5,20 @@
 """
 import os
 import argparse
+from pathlib import Path
+home = str(Path.home())
 
 def get_parser():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
 
     #parser.add_argument('-', "--", help="", default="")
-
     parser.add_argument("-v", "--verbose",
                         action="store_true", help="be verbose")
     parser.add_argument("-s", "--speak",
                         action="store_true")
     parser.add_argument("--effort")
-    parser.add_argument("--file", help="", default="/Users/magnus/task.txt") # nargs='+')
+    parser.add_argument("--file", help="", default= home + os.sep + ".OrgModeClockingXBar.txt") # nargs='+')
     return parser
 
 def clean_time(time):
