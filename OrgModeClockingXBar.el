@@ -2,13 +2,8 @@
 ;;; Code
 ;;;
 (defvar orgmode-clocking-bar-tempfile "~/.OrgModeClockingXBar.txt")
-;(defvar org-clock-current-task "demo")
-
-;(org-mode)
-;(find-file-other-window "/Users/magnus/iCloud/geekbook/notes/life-curr.org")
-
 (defun orgmode-clocking-bar-save-tempfile ()
-  "Save region to a tempfile and run Grammarly on it."
+  "Save current Clockign to a file ~/.OrgModeClockingXBar.txt, so it can be read by OrgModeClockingXBar.py"
   (if org-clock-current-task
       (write-region (org-clock-get-clock-string) nil orgmode-clocking-bar-tempfile nil 'quiet)
     (write-region "Idle?" nil orgmode-clocking-bar-tempfile nil 'quiet))
@@ -18,11 +13,11 @@
 (defvar org-clock-current-task)
 
 (defun orgmode-clocking-in ()
-  "Xxx."
+  "To hook for org-clock-in-hook"
   (setq org-mode-clock-timer (run-with-timer 10 10 'orgmode-clocking-bar-save-tempfile)))
 
 (defun orgmode-clocking-out ()
-  "Xxx."
+  "To hook for org-clock-out-hook"
   (write-region "Idle?" nil orgmode-clocking-bar-tempfile nil 'quiet))
 
 ;; hooks
