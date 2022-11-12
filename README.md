@@ -2,6 +2,11 @@
 
 ![sc 2022-11-12 at 18 23 34](https://user-images.githubusercontent.com/118740/201486665-a53e8f4f-9450-4be4-953c-5571b30dd033.jpg)
 
+## Emacs
+Setup for code for Emacs, add this line to your `~/.emacs.el`:
+
+	(load-file "/Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.el")
+
 ## Python script
 Test the Python setup:
 
@@ -19,8 +24,4 @@ Install into `OrgModeClockingXBar.1s.sh` `~/Library/Application Support/xbar/plu
 
 	python /Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.py
 
-## Emacs
-Setup for code for Emacs, add this line to your `~/.emacs.el`:
-
-	(load-file "/Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.el")
 
