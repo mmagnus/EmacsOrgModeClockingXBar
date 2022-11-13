@@ -4,8 +4,9 @@
 **Table of Contents**
 
 - [Setup for Emacs](#setup-for-emacs)
-   - [xbar/BitBar](#xbarbitbar)
-    - [Conky and other monitors](#conky-and-other-monitors)
+- [xbar/BitBar](#xbarbitbar)
+- [Conky and other monitors](#conky-and-other-monitors)
+- [Discussion](#discussion)
 - [Alternatives](#alternatives)
     - [Linux/Gnome](#linuxgnome)
 - [Tips](#tips)
@@ -21,9 +22,6 @@ The hack is composed of a few elements, Emacs code that adds hooks for clock-in 
 The code is not perfect, if you quit your Emacs, without clocking-out the content of the file will not be changed so you will not see any update on the bar (at least not till next clocking-in or -out)
 
 I have been using this for 2 years, and it's pretty robust. I didn't have time to share it before.
-
-
-[Reddit discussion](https://www.reddit.com/r/orgmode/comments/ytdsho/orgmodeclockingxbar_see_a_task_when_you_clock_in/)
 
 # Setup for Emacs
 
@@ -48,6 +46,8 @@ Put into `OrgModeClockingXBar.1s.sh` `~/Library/Application Support/xbar/plugins
 # Conky and other monitors
 Can also be easily used with [Conky](https://github.com/brndnmtthws/conky), or anyother system monitor if you can `cat ~/.OrgModeClockingXBar.txt`.
 
+# Discussion
+- https://www.reddit.com/r/orgmode/comments/ytdsho/orgmodeclockingxbar_see_a_task_when_you_clock_in/
 # Alternatives
 (not tested by @mmagnus)
 
