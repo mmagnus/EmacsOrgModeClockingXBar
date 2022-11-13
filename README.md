@@ -1,11 +1,11 @@
-# OrgModeClockingXBar
+<h1>OrgModeClockingXBar</h1>
+
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [OrgModeClockingXBar](#orgmodeclockingxbar)
 - [Setup for Emacs](#setup-for-emacs)
-- [Xbar](#xbar)
-- [XBar](#xbar)
+   - [xbar/BitBar](#xbarbitbar)
+    - [Conky and other monitors](#conky-and-other-monitors)
 - [Alternatives](#alternatives)
     - [Linux/Gnome](#linuxgnome)
 - [Tips](#tips)
@@ -22,7 +22,6 @@ The code is not perfect, if you quit your Emacs, without clocking-out the conten
 
 I have been using this for 2 years, and it's pretty robust. I didn't have time to share it before.
 
-Can also be easily used with [Conky](https://github.com/brndnmtthws/conky), or anyother system monitor if you can `cat ~/.OrgModeClockingXBar.txt`)
 
 [Reddit discussion](https://www.reddit.com/r/orgmode/comments/ytdsho/orgmodeclockingxbar_see_a_task_when_you_clock_in/)
 
@@ -30,45 +29,30 @@ Can also be easily used with [Conky](https://github.com/brndnmtthws/conky), or a
 
 Setup the code for Emacs, add this line to your `~/.emacs.el`, in my case:
 
-	(load-file "/Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.el")
+```emacs-lisp
+(load-file "/Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.el")
+```
 
 # xbar/BitBar
 Install https://xbarapp.com .
 
 Put into `OrgModeClockingXBar.1s.sh` `~/Library/Application Support/xbar/plugins`, you can also Open Plugin folder:
 
-![sc 2022-11-12 at 18 41 48](https://user-images.githubusercontent.com/118740/201487364-c498bc2d-4d90-45d3-bc28-25b68227e3cc.jpg)
-
-(change the path for `OrgModeClockingXBar.py` in `OrgModeClockingXBar.1s.sh`, in my case this is:
-
+<img style="width:200px" src="https://user-images.githubusercontent.com/118740/201487364-c498bc2d-4d90-45d3-bc28-25b68227e3cc.jpg">
 
 	cat ~/.OrgModeClockingXBar.txt
 	# or via python script to do more processing 
 	# python /Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.py
+	# ^ change the path for `OrgModeClockingXBar.py` in `OrgModeClockingXBar.1s.sh`
+
+# Conky and other monitors
+Can also be easily used with [Conky](https://github.com/brndnmtthws/conky), or anyother system monitor if you can `cat ~/.OrgModeClockingXBar.txt`.
 
 # Alternatives
 (not tested by @mmagnus)
 
 ## Linux/Gnome
 Thanks for reddit to like to this https://github.com/freddez/gnome-shell-simple-message with the code for Emacs as well (see below). See also https://extensions.gnome.org/extension/5018/simple-message/
-
-```emacs-lisp
-(defun current-task-to-status ()
-  (interactive)
-  (if (fboundp 'org-clocking-p)
-      (if (org-clocking-p)
-          (call-process "dconf" nil nil nil "write"
-                        "/org/gnome/shell/extensions/simple-message/message"
-                        (concat "'" (org-clock-get-clock-string) "'"))
-        (call-process "dconf" nil nil nil "write"
-                      "/org/gnome/shell/extensions/simple-message/message"
-                      "'No active clock'"))))
-(run-with-timer 0 60 'current-task-to-status)
-(add-hook 'org-clock-in-hook 'current-task-to-status)
-(add-hook 'org-clock-out-hook 'current-task-to-status)
-(add-hook 'org-clock-cancel-hook 'current-task-to-status)
-(add-hook 'org-clock-goto-hook 'current-task-to-status)
-```
 
 # Tips
 
