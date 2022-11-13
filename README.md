@@ -12,6 +12,8 @@ I have been using this for 2 years, and it's pretty robust. I didn't have time t
 
 https://www.reddit.com/r/orgmode/comments/ytdsho/orgmodeclockingxbar_see_a_task_when_you_clock_in/
 
+Thanks for reddit to like to this https://github.com/freddez/gnome-shell-simple-message with the code for Emacs as well.
+
 ## Emacs
 Setup the code for Emacs, add this line to your `~/.emacs.el`, in my case:
 
