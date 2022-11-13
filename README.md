@@ -44,7 +44,7 @@ Put into `OrgModeClockingXBar.1s.sh` `~/Library/Application Support/xbar/plugins
 	python /Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.py
 
 # Alternatives
-(not tested by me)
+(not tested by @mmagnus)
 
 ## Linux/Gnome
 Thanks for reddit to like to this https://github.com/freddez/gnome-shell-simple-message with the code for Emacs as well (see below). See also https://extensions.gnome.org/extension/5018/simple-message/
