@@ -44,10 +44,13 @@ Put into `OrgModeClockingXBar.1s.sh` `~/Library/Application Support/xbar/plugins
 	# ^ change the path for `OrgModeClockingXBar.py` in `OrgModeClockingXBar.1s.sh`
 
 # Conky and other monitors
-Can also be easily used with [Conky](https://github.com/brndnmtthws/conky), or anyother system monitor if you can `cat ~/.OrgModeClockingXBar.txt`.
+You can also be easily used with [Conky](https://github.com/brndnmtthws/conky), or anyother system monitor if you can `cat ~/.OrgModeClockingXBar.txt`.
 
 # Discussion
+
 - https://www.reddit.com/r/orgmode/comments/ytdsho/orgmodeclockingxbar_see_a_task_when_you_clock_in/
+- https://lists.gnu.org/archive/html/emacs-orgmode/2022-11/msg00415.html
+
 # Alternatives
 (not tested by @mmagnus)
 
