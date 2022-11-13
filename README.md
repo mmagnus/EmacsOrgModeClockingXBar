@@ -41,7 +41,10 @@ Put into `OrgModeClockingXBar.1s.sh` `~/Library/Application Support/xbar/plugins
 
 (change the path for `OrgModeClockingXBar.py` in `OrgModeClockingXBar.1s.sh`, in my case this is:
 
-	python /Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.py
+
+	cat ~/.OrgModeClockingXBar.txt
+	# or via python script to do more processing 
+	# python /Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.py
 
 # Alternatives
 (not tested by me)
