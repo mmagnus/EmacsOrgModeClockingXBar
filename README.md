@@ -51,6 +51,7 @@ Can also be easily used with [Conky](https://github.com/brndnmtthws/conky), or a
 # Discussion
 
 - https://www.reddit.com/r/orgmode/comments/ytdsho/orgmodeclockingxbar_see_a_task_when_you_clock_in/
+- https://www.reddit.com/r/orgmode/comments/yteilw/github_mmagnusorgmodeclockingxbar/
 - https://lists.gnu.org/archive/html/emacs-orgmode/2022-11/msg00415.html
 
 # Alternatives
