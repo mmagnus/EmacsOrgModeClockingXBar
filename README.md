@@ -54,6 +54,12 @@ You can also be easily used with [Conky](https://github.com/brndnmtthws/conky), 
 # Alternatives
 (not tested by @mmagnus)
 
+from gxonatano_
+
+> Cool. I do something similar for my Sway / Waybar config here in my dotfiles. You can use it in polybar, too, or i3bar, or whatever. It's just a script that polls emacs every so often and gets the clock. If you can see a way to improve it, let me know!
+
+https://github.com/JonathanReeve/dotfiles/blob/master/scripts/org-clock.hs
+
 ## Linux/Gnome
 Thanks for reddit to like to this https://github.com/freddez/gnome-shell-simple-message with the code for Emacs as well (see below). See also https://extensions.gnome.org/extension/5018/simple-message/
 
