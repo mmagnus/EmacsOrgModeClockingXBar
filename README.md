@@ -8,6 +8,7 @@
 - [Conky and other monitors](#conky-and-other-monitors)
 - [Discussion](#discussion)
 - [Alternatives](#alternatives)
+    - [emacsclient --eval](#emacsclient---eval)
     - [Linux/Gnome](#linuxgnome)
 - [Tips](#tips)
 
@@ -43,15 +44,32 @@ Put into `OrgModeClockingXBar.1s.sh` `~/Library/Application Support/xbar/plugins
 	# python /Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.py
 	# ^ change the path for `OrgModeClockingXBar.py` in `OrgModeClockingXBar.1s.sh`
 
+
 # Conky and other monitors
 Can also be easily used with [Conky](https://github.com/brndnmtthws/conky), or anyother system monitor if you can `cat ~/.OrgModeClockingXBar.txt`.
 
 # Discussion
+
 - https://www.reddit.com/r/orgmode/comments/ytdsho/orgmodeclockingxbar_see_a_task_when_you_clock_in/
+- https://lists.gnu.org/archive/html/emacs-orgmode/2022-11/msg00415.html
+
 # Alternatives
-(not tested by @mmagnus)
+## emacsclient --eval 
+from gxonatano_ @reddit
+
+> Cool. I do something similar for my Sway / Waybar config here in my dotfiles. You can use it in polybar, too, or i3bar, or whatever. It's just a script that polls emacs every so often and gets the clock. If you can see a way to improve it, let me know!
+
+```shell
+$ emacsclient --eval '(if (org-clocking-p)(org-clock-get-clock-string) -1)'
+#(" [0:01] (OrgModeClockingXBar)" 0 29
+  (face org-mode-line-clock))
+```
+
+https://github.com/JonathanReeve/dotfiles/blob/master/scripts/org-clock.hs
 
 ## Linux/Gnome
+(not tested by @mmagnus)
+
 Thanks for reddit to like to this https://github.com/freddez/gnome-shell-simple-message with the code for Emacs as well (see below). See also https://extensions.gnome.org/extension/5018/simple-message/
 
 ```emacs-lisp
@@ -72,6 +90,7 @@ Thanks for reddit to like to this https://github.com/freddez/gnome-shell-simple-
 (add-hook 'org-clock-goto-hook 'current-task-to-status)
 ```
 
+
 # Tips
 
 There is a Python script that can be added to XBar to process `~/.OrgModeClockingXBar.txt` to do even more.
@@ -80,3 +99,4 @@ Test if the Python setup can read the file and show a clocked-in task:
 
 	➜  OrgModeClockingXBar git:(main) ✗ /Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.py
 	[0:12] (orgmode: time bar)
+

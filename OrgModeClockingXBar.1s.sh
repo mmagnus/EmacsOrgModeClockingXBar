@@ -8,3 +8,6 @@
 #cat ~/task.txt
 #/Users/magnus/miniconda3/bin/python /Users/magnus/workspace/OrgModeClockingXBar/OrgModeClockingXBar.py
 cat ~/.OrgModeClockingXBar.txt
+
+# or hack from gxonatano_@reddit
+# /opt/homebrew/bin/emacsclient --eval '(if (org-clocking-p)(org-clock-get-clock-string) -1)'
