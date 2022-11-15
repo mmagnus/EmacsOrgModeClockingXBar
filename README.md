@@ -59,7 +59,7 @@ from gxonatano_
 > Cool. I do something similar for my Sway / Waybar config here in my dotfiles. You can use it in polybar, too, or i3bar, or whatever. It's just a script that polls emacs every so often and gets the clock. If you can see a way to improve it, let me know!
 
 ```shell
-emacsclient --eval '(if (org-clocking-p)(org-clock-get-clock-string) -1)'
+$ emacsclient --eval '(if (org-clocking-p)(org-clock-get-clock-string) -1)'
 #(" [0:01] (OrgModeClockingXBar)" 0 29
   (face org-mode-line-clock))
 ```
