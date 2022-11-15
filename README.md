@@ -91,6 +91,9 @@ Thanks for reddit to like to this https://github.com/freddez/gnome-shell-simple-
 (add-hook 'org-clock-goto-hook 'current-task-to-status)
 ```
 
+## @cantsin
+
+https://github.com/cantsin/dotfiles/tree/2dc36a98d62cb253f3eed7359d472cf72d314b3a/home/org-task
 
 # Tips
 
